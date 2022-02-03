@@ -1,0 +1,251 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.div__container {
+  margin-top: 22px;
+  display: flex;
+  border: 0px solid blue;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 3px 6px 0px #ab9898;
+  background-color: white;
+}
+
+.div__container div {
+  width: fit-content;
+}
+
+.data {
+  width: 1px;
+}
+
+.price {
+  font-size: 34px;
+  color: #08db83;
+  font-family: cursive;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin-right: 12px;
+  width: 110px;
+}
+
+.buttons button {
+  width: 84px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  height: 40px;
+  border: 2px solid orange;
+  background-color: white;
+  font-weight: 600;
+  color: orange;
+}
+
+.unrealized__pl__conatiner {
+  display: flex;
+  flex-direction: column;
+}
+
+.unrealized__pl__conatiner div {
+  width: 13vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: -9px;
+}
+
+.data div {
+  width: 10vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.val__conatiner div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 11vw;
+  margin-bottom: -9px;
+}
+
+.pl {
+  font-weight: 700;
+}
+
+.pl_pr {
+  font-weight: 700;
+}
+
+.container {
+  width: 80vw;
+}
+
+.chart__content {
+  margin: 25px 8px 0px 16px;
+}
+
+.chat__cont {
+  border: 0px solid blue;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 3px 6px 0px #ab9898;
+  padding: 3px;
+  margin-top: 20px;
+  background-color: white;
+}
+
+body {
+  background-color: #f4f4fb;
+}
+
+.data div p,
+.price__container div p {
+  margin-bottom: 4px;
+}
+
+.price__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chart {
+  margin-right: 14px;
+}
+
+.log {
+  font-size: 32px;
+  margin-left: 31px;
+}
+
+.ch {
+  margin-bottom: 21px;
+}
+
+@media screen and (max-width: 763px) {
+  .main__container {
+    flex-direction: column;
+  }
+  .div__container {
+    justify-content: space-between;
+    width: 95vw;
+  }
+  .log {
+    width: fit-content;
+  }
+  .price {
+    font-size: 12px;
+  }
+  .container {
+    width: 100vw;
+  }
+  .log {
+    font-size: 17px;
+    margin-left: 11px;
+  }
+  .price__container {
+    font-size: x-small;
+  }
+  .data div p,
+  .val__conatiner div p,
+  .unrealized__pl__conatiner div p,
+  .shares__container p {
+    font-size: x-small;
+    font-size: 8px;
+  }
+  .buttons button {
+    font-size: x-small;
+    width: 36px;
+    height: 19px;
+    border: 1px solid orange;
+  }
+  .val__conatiner div {
+    width: 20vw;
+    margin-bottom: -15px;
+  }
+  .unrealized__pl__conatiner div {
+    margin-bottom: -15px;
+    width: 18vw;
+  }
+  .data div {
+    width: 16vw;
+  }
+  .chat__cont {
+    width: 95vw;
+    margin: 12px;
+  }
+  .container,
+  .container-sm {
+    max-width: 757px;
+  }
+}
+
+@media screen and (min-width: 758px) {
+  .div__container {
+    margin-left: -7px;
+  }
+  .main__container {
+    flex-wrap: nowrap;
+  }
+  .container {
+    width: 80vw;
+  }
+  .chart {
+    margin-right: 3px;
+    width: 20vw;
+  }
+  .data div {
+    width: 13vw;
+  }
+  .val__conatiner div {
+    width: 15vw;
+  }
+  .price {
+    font-size: 1.3rem;
+  }
+  .log {
+    margin-left: 0.3rem;
+  }
+  .buttons button {
+    margin-top: 2px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .main__container {
+    flex-wrap: nowrap;
+  }
+  .container {
+    width: 100vw;
+  }
+  .chart {
+    margin-right: 3px;
+    width: 20vw;
+  }
+  .data div {
+    width: 16vw;
+  }
+  .val__conatiner div {
+    width: 18vw;
+  }
+  .unrealized__pl__conatiner div {
+    width: 18vw;
+  }
+  .buttons button {
+    margin-top: 2px;
+  }
+}
