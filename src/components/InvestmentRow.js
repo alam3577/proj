@@ -1,6 +1,6 @@
 import React from "react";
 import { IsProgress } from "../utils/common";
-import Buttons from "./Buttons";
+import Buttons from "./Button";
 import Progress from "./Progress";
 
 function InvestmentRow({ data }) {
